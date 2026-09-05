@@ -1,0 +1,6 @@
+NF-UQ-NIDS-v2.csv
+__pycache__/
+*.pyc
+venv/
+.venv/
+data/splits/

@@ -1,0 +1,7 @@
+Flow-size definition: IN_BYTES + OUT_BYTES
+Quantiles computed from TRAINING data only.
+
+Q90=3373.0
+Q95=5823.0
+Q97.5=9248.0
+Q99=30618.0

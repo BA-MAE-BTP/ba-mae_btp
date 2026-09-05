@@ -1,0 +1,48 @@
+BA-MAE DEPENDENCY DISCOVERY SUMMARY
+============================================================
+
+Training sample size: 100,000
+Number of model features: 39
+MI weight (alpha): 0.5
+Spearman weight (beta): 0.5
+
+Unified Dependency Distribution
+----------------------------------------
+Q50: 0.232912
+Q75: 0.364537
+Q90: 0.532714
+Q95: 0.628849
+Q99: 0.813156
+
+Threshold Counts
+----------------------------------------
+>= 0.3: 264 pairs
+>= 0.4: 155 pairs
+>= 0.5: 83 pairs
+>= 0.6: 52 pairs
+>= 0.7: 21 pairs
+>= 0.8: 10 pairs
+
+Top 20 Feature Pairs
+----------------------------------------
+                 Feature_1                 Feature_2      NMI  Spearman  Abs_Spearman  Unified_Dependency
+          LONGEST_FLOW_PKT            MAX_IP_PKT_LEN 1.000000  1.000000      1.000000            1.000000
+                 ICMP_TYPE            ICMP_IPV4_TYPE 1.000000  1.000000      1.000000            1.000000
+                   MIN_TTL                   MAX_TTL 0.996930  0.999496      0.999496            0.998213
+                 TCP_FLAGS          CLIENT_TCP_FLAGS 0.875035  0.977096      0.977096            0.926065
+                 OUT_BYTES   DST_TO_SRC_SECOND_BYTES 0.849007  0.996997      0.996997            0.923002
+   RETRANSMITTED_OUT_BYTES    RETRANSMITTED_OUT_PKTS 0.759263  0.999889      0.999889            0.879576
+    RETRANSMITTED_IN_BYTES     RETRANSMITTED_IN_PKTS 0.721215  0.999401      0.999401            0.860308
+              DNS_QUERY_ID            DNS_QUERY_TYPE 0.635748  0.994131      0.994131            0.814940
+   DST_TO_SRC_SECOND_BYTES DST_TO_SRC_AVG_THROUGHPUT 0.664702  0.956257      0.956257            0.810480
+                 OUT_BYTES DST_TO_SRC_AVG_THROUGHPUT 0.649737  0.960776      0.960776            0.805257
+                 TCP_FLAGS          SERVER_TCP_FLAGS 0.719849  0.859695      0.859695            0.789772
+                  PROTOCOL          CLIENT_TCP_FLAGS 0.626506 -0.886088      0.886088            0.756297
+                 OUT_BYTES                  OUT_PKTS 0.511036  0.989503      0.989503            0.750270
+                  OUT_PKTS   DST_TO_SRC_SECOND_BYTES 0.497700  0.987815      0.987815            0.742758
+                  PROTOCOL                 TCP_FLAGS 0.599785 -0.875080      0.875080            0.737432
+            DNS_QUERY_TYPE            DNS_TTL_ANSWER 0.551748  0.905942      0.905942            0.728845
+FLOW_DURATION_MILLISECONDS               DURATION_IN 0.815481  0.624383      0.624383            0.719932
+          CLIENT_TCP_FLAGS            TCP_WIN_MAX_IN 0.501205  0.937207      0.937207            0.719206
+                 TCP_FLAGS            TCP_WIN_MAX_IN 0.490554  0.927476      0.927476            0.709015
+          CLIENT_TCP_FLAGS          SERVER_TCP_FLAGS 0.612029  0.791438      0.791438            0.701734

@@ -1,0 +1,9 @@
+BA-MAE FEATURE BLOCK VALIDATION
+============================================================
+
+Mean within-block dependency: 0.706203
+Mean between-block dependency: 0.241723
+Within/Between ratio: 2.921537
+
+Interpretation:
+Higher within-block dependency combined with lower between-block dependency indicates better block separation.
