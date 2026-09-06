@@ -1,0 +1,217 @@
+STAGE 4C — THRESHOLDED SECOND-ORDER BLOCK EVALUATION
+======================================================================
+
+Second-order graph: cosine similarity between dependency fingerprints
+Evaluation reference: original first-order dependency matrix D
+
+ threshold  number_of_blocks  singleton_blocks  largest_block  mean_block_size  mean_first_order_within  mean_first_order_between  within_between_ratio  max_cross_block_first_order  within_pairs_ge_0.70  cross_pairs_ge_0.70
+      0.85                21                20             19         1.857143                 0.483959                  0.154028              3.142016                          1.0                    16                   13
+      0.88                21                20             19         1.857143                 0.483959                  0.154028              3.142016                          1.0                    16                   13
+      0.90                28                26             10         1.392857                 0.542660                  0.208522              2.602418                          1.0                     8                   21
+      0.91                30                29             10         1.300000                 0.526469                  0.211009              2.495011                          1.0                     7                   22
+      0.92                33                32              7         1.181818                 0.514569                  0.221871              2.319227                          1.0                     3                   26
+      0.93                35                34              5         1.114286                 0.497698                  0.226506              2.197283                          1.0                     1                   28
+
+BLOCK DETAILS
+----------------------------------------------------------------------
+
+Threshold = 0.85
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES | IN_PKTS | OUT_BYTES | OUT_PKTS | TCP_FLAGS | CLIENT_TCP_FLAGS | SERVER_TCP_FLAGS | DURATION_OUT | LONGEST_FLOW_PKT | MAX_IP_PKT_LEN | DST_TO_SRC_SECOND_BYTES | SRC_TO_DST_AVG_THROUGHPUT | DST_TO_SRC_AVG_THROUGHPUT | NUM_PKTS_UP_TO_128_BYTES | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_IN | TCP_WIN_MAX_OUT
+  Size: 19
+  Mean first-order within: 0.483959
+  Min first-order within: 0.000000
+Block 4: FLOW_DURATION_MILLISECONDS
+Block 5: DURATION_IN
+Block 6: MIN_TTL
+Block 7: MAX_TTL
+Block 8: SHORTEST_FLOW_PKT
+Block 9: MIN_IP_PKT_LEN
+Block 10: SRC_TO_DST_SECOND_BYTES
+Block 11: RETRANSMITTED_IN_BYTES
+Block 12: RETRANSMITTED_IN_PKTS
+Block 13: RETRANSMITTED_OUT_BYTES
+Block 14: RETRANSMITTED_OUT_PKTS
+Block 15: NUM_PKTS_128_TO_256_BYTES
+Block 16: ICMP_TYPE
+Block 17: ICMP_IPV4_TYPE
+Block 18: DNS_QUERY_ID
+Block 19: DNS_QUERY_TYPE
+Block 20: DNS_TTL_ANSWER
+Block 21: FTP_COMMAND_RET_CODE
+
+Threshold = 0.88
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES | IN_PKTS | OUT_BYTES | OUT_PKTS | TCP_FLAGS | CLIENT_TCP_FLAGS | SERVER_TCP_FLAGS | DURATION_OUT | LONGEST_FLOW_PKT | MAX_IP_PKT_LEN | DST_TO_SRC_SECOND_BYTES | SRC_TO_DST_AVG_THROUGHPUT | DST_TO_SRC_AVG_THROUGHPUT | NUM_PKTS_UP_TO_128_BYTES | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_IN | TCP_WIN_MAX_OUT
+  Size: 19
+  Mean first-order within: 0.483959
+  Min first-order within: 0.000000
+Block 4: FLOW_DURATION_MILLISECONDS
+Block 5: DURATION_IN
+Block 6: MIN_TTL
+Block 7: MAX_TTL
+Block 8: SHORTEST_FLOW_PKT
+Block 9: MIN_IP_PKT_LEN
+Block 10: SRC_TO_DST_SECOND_BYTES
+Block 11: RETRANSMITTED_IN_BYTES
+Block 12: RETRANSMITTED_IN_PKTS
+Block 13: RETRANSMITTED_OUT_BYTES
+Block 14: RETRANSMITTED_OUT_PKTS
+Block 15: NUM_PKTS_128_TO_256_BYTES
+Block 16: ICMP_TYPE
+Block 17: ICMP_IPV4_TYPE
+Block 18: DNS_QUERY_ID
+Block 19: DNS_QUERY_TYPE
+Block 20: DNS_TTL_ANSWER
+Block 21: FTP_COMMAND_RET_CODE
+
+Threshold = 0.90
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES
+Block 4: IN_PKTS
+Block 5: OUT_BYTES
+Block 6: OUT_PKTS | TCP_FLAGS | CLIENT_TCP_FLAGS | SERVER_TCP_FLAGS | NUM_PKTS_UP_TO_128_BYTES | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_IN | TCP_WIN_MAX_OUT
+  Size: 10
+  Mean first-order within: 0.526469
+  Min first-order within: 0.320437
+Block 7: FLOW_DURATION_MILLISECONDS
+Block 8: DURATION_IN
+Block 9: DURATION_OUT
+Block 10: MIN_TTL
+Block 11: MAX_TTL
+Block 12: LONGEST_FLOW_PKT | MAX_IP_PKT_LEN | SRC_TO_DST_AVG_THROUGHPUT
+  Size: 3
+  Mean first-order within: 0.785530
+  Min first-order within: 0.678294
+Block 13: SHORTEST_FLOW_PKT
+Block 14: MIN_IP_PKT_LEN
+Block 15: SRC_TO_DST_SECOND_BYTES
+Block 16: DST_TO_SRC_SECOND_BYTES
+Block 17: RETRANSMITTED_IN_BYTES
+Block 18: RETRANSMITTED_IN_PKTS
+Block 19: RETRANSMITTED_OUT_BYTES
+Block 20: RETRANSMITTED_OUT_PKTS
+Block 21: DST_TO_SRC_AVG_THROUGHPUT
+Block 22: NUM_PKTS_128_TO_256_BYTES
+Block 23: ICMP_TYPE
+Block 24: ICMP_IPV4_TYPE
+Block 25: DNS_QUERY_ID
+Block 26: DNS_QUERY_TYPE
+Block 27: DNS_TTL_ANSWER
+Block 28: FTP_COMMAND_RET_CODE
+
+Threshold = 0.91
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES
+Block 4: IN_PKTS
+Block 5: OUT_BYTES
+Block 6: OUT_PKTS | TCP_FLAGS | CLIENT_TCP_FLAGS | SERVER_TCP_FLAGS | NUM_PKTS_UP_TO_128_BYTES | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_IN | TCP_WIN_MAX_OUT
+  Size: 10
+  Mean first-order within: 0.526469
+  Min first-order within: 0.320437
+Block 7: FLOW_DURATION_MILLISECONDS
+Block 8: DURATION_IN
+Block 9: DURATION_OUT
+Block 10: MIN_TTL
+Block 11: MAX_TTL
+Block 12: LONGEST_FLOW_PKT
+Block 13: SHORTEST_FLOW_PKT
+Block 14: MIN_IP_PKT_LEN
+Block 15: MAX_IP_PKT_LEN
+Block 16: SRC_TO_DST_SECOND_BYTES
+Block 17: DST_TO_SRC_SECOND_BYTES
+Block 18: RETRANSMITTED_IN_BYTES
+Block 19: RETRANSMITTED_IN_PKTS
+Block 20: RETRANSMITTED_OUT_BYTES
+Block 21: RETRANSMITTED_OUT_PKTS
+Block 22: SRC_TO_DST_AVG_THROUGHPUT
+Block 23: DST_TO_SRC_AVG_THROUGHPUT
+Block 24: NUM_PKTS_128_TO_256_BYTES
+Block 25: ICMP_TYPE
+Block 26: ICMP_IPV4_TYPE
+Block 27: DNS_QUERY_ID
+Block 28: DNS_QUERY_TYPE
+Block 29: DNS_TTL_ANSWER
+Block 30: FTP_COMMAND_RET_CODE
+
+Threshold = 0.92
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES
+Block 4: IN_PKTS
+Block 5: OUT_BYTES
+Block 6: OUT_PKTS
+Block 7: TCP_FLAGS | SERVER_TCP_FLAGS | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_IN | TCP_WIN_MAX_OUT
+  Size: 7
+  Mean first-order within: 0.514569
+  Min first-order within: 0.351676
+Block 8: CLIENT_TCP_FLAGS
+Block 9: FLOW_DURATION_MILLISECONDS
+Block 10: DURATION_IN
+Block 11: DURATION_OUT
+Block 12: MIN_TTL
+Block 13: MAX_TTL
+Block 14: LONGEST_FLOW_PKT
+Block 15: SHORTEST_FLOW_PKT
+Block 16: MIN_IP_PKT_LEN
+Block 17: MAX_IP_PKT_LEN
+Block 18: SRC_TO_DST_SECOND_BYTES
+Block 19: DST_TO_SRC_SECOND_BYTES
+Block 20: RETRANSMITTED_IN_BYTES
+Block 21: RETRANSMITTED_IN_PKTS
+Block 22: RETRANSMITTED_OUT_BYTES
+Block 23: RETRANSMITTED_OUT_PKTS
+Block 24: SRC_TO_DST_AVG_THROUGHPUT
+Block 25: DST_TO_SRC_AVG_THROUGHPUT
+Block 26: NUM_PKTS_UP_TO_128_BYTES
+Block 27: NUM_PKTS_128_TO_256_BYTES
+Block 28: ICMP_TYPE
+Block 29: ICMP_IPV4_TYPE
+Block 30: DNS_QUERY_ID
+Block 31: DNS_QUERY_TYPE
+Block 32: DNS_TTL_ANSWER
+Block 33: FTP_COMMAND_RET_CODE
+
+Threshold = 0.93
+Block 1: PROTOCOL
+Block 2: L7_PROTO
+Block 3: IN_BYTES
+Block 4: IN_PKTS
+Block 5: OUT_BYTES
+Block 6: OUT_PKTS
+Block 7: TCP_FLAGS
+Block 8: CLIENT_TCP_FLAGS
+Block 9: SERVER_TCP_FLAGS | NUM_PKTS_256_TO_512_BYTES | NUM_PKTS_512_TO_1024_BYTES | NUM_PKTS_1024_TO_1514_BYTES | TCP_WIN_MAX_OUT
+  Size: 5
+  Mean first-order within: 0.497698
+  Min first-order within: 0.418746
+Block 10: FLOW_DURATION_MILLISECONDS
+Block 11: DURATION_IN
+Block 12: DURATION_OUT
+Block 13: MIN_TTL
+Block 14: MAX_TTL
+Block 15: LONGEST_FLOW_PKT
+Block 16: SHORTEST_FLOW_PKT
+Block 17: MIN_IP_PKT_LEN
+Block 18: MAX_IP_PKT_LEN
+Block 19: SRC_TO_DST_SECOND_BYTES
+Block 20: DST_TO_SRC_SECOND_BYTES
+Block 21: RETRANSMITTED_IN_BYTES
+Block 22: RETRANSMITTED_IN_PKTS
+Block 23: RETRANSMITTED_OUT_BYTES
+Block 24: RETRANSMITTED_OUT_PKTS
+Block 25: SRC_TO_DST_AVG_THROUGHPUT
+Block 26: DST_TO_SRC_AVG_THROUGHPUT
+Block 27: NUM_PKTS_UP_TO_128_BYTES
+Block 28: NUM_PKTS_128_TO_256_BYTES
+Block 29: TCP_WIN_MAX_IN
+Block 30: ICMP_TYPE
+Block 31: ICMP_IPV4_TYPE
+Block 32: DNS_QUERY_ID
+Block 33: DNS_QUERY_TYPE
+Block 34: DNS_TTL_ANSWER
+Block 35: FTP_COMMAND_RET_CODE

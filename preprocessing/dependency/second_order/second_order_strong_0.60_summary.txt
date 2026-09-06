@@ -1,0 +1,42 @@
+STAGE 4D — STRONG-NEIGHBOR SECOND-ORDER GRAPH
+======================================================================
+
+Strong dependency threshold: 0.60
+Base dependency:
+D = 0.35*NMI + 0.65*abs(Spearman)
+
+Fingerprint construction:
+1. Set diagonal to zero.
+2. Keep only D >= threshold.
+3. Compute cosine similarity between sparse fingerprints.
+
+Strong-neighbor counts:
+Min: 0
+Median: 2
+Mean: 2.97
+Max: 8
+
+Second-order similarity statistics:
+Min: 0.000000
+Median: 0.000000
+Q75: 0.000000
+Q90: 0.347685
+Q95: 0.505448
+Max: 0.798559
+
+Top 15 relationships:
+1. OUT_BYTES <-> DST_TO_SRC_SECOND_BYTES : 0.798559
+2. SERVER_TCP_FLAGS <-> TCP_WIN_MAX_OUT : 0.786763
+3. TCP_FLAGS <-> CLIENT_TCP_FLAGS : 0.736079
+4. IN_PKTS <-> SRC_TO_DST_SECOND_BYTES : 0.729172
+5. LONGEST_FLOW_PKT <-> MAX_IP_PKT_LEN : 0.723095
+6. RETRANSMITTED_IN_PKTS <-> ICMP_TYPE : 0.707560
+7. RETRANSMITTED_IN_PKTS <-> ICMP_IPV4_TYPE : 0.707560
+8. OUT_PKTS <-> DST_TO_SRC_AVG_THROUGHPUT : 0.704930
+9. RETRANSMITTED_IN_BYTES <-> ICMP_TYPE : 0.699897
+10. RETRANSMITTED_IN_BYTES <-> ICMP_IPV4_TYPE : 0.699897
+11. DST_TO_SRC_AVG_THROUGHPUT <-> TCP_WIN_MAX_OUT : 0.695031
+12. OUT_PKTS <-> DST_TO_SRC_SECOND_BYTES : 0.685330
+13. FLOW_DURATION_MILLISECONDS <-> SRC_TO_DST_SECOND_BYTES : 0.684330
+14. OUT_BYTES <-> OUT_PKTS : 0.681851
+15. MIN_IP_PKT_LEN <-> DST_TO_SRC_AVG_THROUGHPUT : 0.656506

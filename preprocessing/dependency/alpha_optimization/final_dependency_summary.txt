@@ -1,0 +1,37 @@
+FINAL DEPENDENCY MATRIX
+=======================
+
+Alpha = 0.35
+NMI weight = 0.35
+Spearman weight = 0.65
+
+Number of features = 39
+Matrix shape = (39, 39)
+Minimum dependency = 0.0
+Maximum dependency = 1.0
+Mean dependency = 0.2499054955113344
+Symmetric = True
+Diagonal = 1 = True
+
+Top dependency pairs:
+              feature_1                 feature_2  dependency
+       LONGEST_FLOW_PKT            MAX_IP_PKT_LEN    1.000000
+              ICMP_TYPE            ICMP_IPV4_TYPE    1.000000
+                MIN_TTL                   MAX_TTL    0.998598
+              OUT_BYTES   DST_TO_SRC_SECOND_BYTES    0.945200
+              TCP_FLAGS          CLIENT_TCP_FLAGS    0.941375
+RETRANSMITTED_OUT_BYTES    RETRANSMITTED_OUT_PKTS    0.915670
+ RETRANSMITTED_IN_BYTES     RETRANSMITTED_IN_PKTS    0.902035
+           DNS_QUERY_ID            DNS_QUERY_TYPE    0.868697
+DST_TO_SRC_SECOND_BYTES DST_TO_SRC_AVG_THROUGHPUT    0.854213
+              OUT_BYTES DST_TO_SRC_AVG_THROUGHPUT    0.851912
+              OUT_BYTES                  OUT_PKTS    0.822040
+               OUT_PKTS   DST_TO_SRC_SECOND_BYTES    0.816275
+              TCP_FLAGS          SERVER_TCP_FLAGS    0.810749
+       CLIENT_TCP_FLAGS            TCP_WIN_MAX_IN    0.784607
+         DNS_QUERY_TYPE            DNS_TTL_ANSWER    0.781974
+              TCP_FLAGS            TCP_WIN_MAX_IN    0.774553
+ RETRANSMITTED_IN_BYTES            ICMP_IPV4_TYPE    0.748430
+ RETRANSMITTED_IN_BYTES                 ICMP_TYPE    0.748430
+       SERVER_TCP_FLAGS           TCP_WIN_MAX_OUT    0.746843
+           DNS_QUERY_ID            DNS_TTL_ANSWER    0.738223
